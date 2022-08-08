@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from datetime import date
 from django.contrib.auth.models import User
 
 class Prompt(models.Model):
@@ -12,3 +13,15 @@ class Prompt(models.Model):
 
   def get_absolute_url(self):
     return reverse('prompts_detail', kwargs={'prompt_id': self.id})
+
+
+class Car(models.Model):
+  date = models.DateField('Response date')
+  challenge = models.CharField(max_length=2250)
+  action = models.CharField(max_length=2250)
+  response = models.CharField(max_length=2250)
+
+  prompt = models.ForeignKey(Prompt, on_delete=models.CASCADE)
+
+  def __str__(self):
+    return f"{self.get_car_display()} on {self.date}"

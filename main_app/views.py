@@ -6,6 +6,7 @@ from .models import Prompt
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from .forms import CarForm
 # from django.http import HttpResponse
 
 
@@ -77,4 +78,13 @@ def prompts_index(request):
 @login_required
 def prompts_detail(request, prompt_id):
   prompt = Prompt.objects.get(id=prompt_id)
-  return render(request, 'prompts/detail.html', { 'prompt': prompt })
+  car_form = CarForm()
+  return render(request, 'prompts/detail.html', { 'prompt': prompt, 'car_form': car_form })
+
+def add_car(request, prompt_id):
+  form = CarForm(request.POST)
+  if form.is_valid():
+    new_car = form.save(commit=False)
+    new_car.prompt_id = prompt_id
+    new_car.save()
+  return redirect('prompts_detail', prompt_id=prompt_id)

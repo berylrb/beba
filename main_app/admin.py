@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Prompt
+from .models import Prompt, Car
 # Register your models here.
 
 admin.site.register(Prompt)
+admin.site.register(Car)

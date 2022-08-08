@@ -10,4 +10,5 @@ urlpatterns = [
   path('prompts/<int:pk>/update/', views.PromptUpdate.as_view(), name='prompts_update'),
   path('prompts/<int:pk>/delete/', views.PromptDelete.as_view(), name='prompts_delete'),
   path('accounts/signup/', views.signup, name='signup'),
+  path('prompts/<int:prompt_id>/add_car/', views.add_car, name='add_car'),
 ]
