@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Prompt
 from django.http import HttpResponse
 
@@ -14,6 +15,21 @@ from django.http import HttpResponse
 #   Prompt('Failure', 'Tell me about a time you failed.'),
 #   Prompt('Adaptability', 'Tell me about a time you overcame an obstacle.')
 # ]
+
+class PromptCreate(CreateView):
+  model = Prompt
+  fields = ['topic', 'question']
+  success_url = '/prompts/'
+
+class PromptUpdate(UpdateView):
+  model = Prompt
+  fields = ['topic', 'question']
+
+class PromptDelete(DeleteView):
+  model = Prompt
+  success_url = '/prompts/'
+
+
 
 def home(request):
   return HttpResponse('<h1>Hello ᓚᘏᗢ</h1>')

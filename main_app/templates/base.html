@@ -28,8 +28,9 @@
     </div>
     <nav>
       <ul>
-        <li><a href="/prompts">All Propmts</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="{% url 'prompts_index' %}">All Prompts</a></li>
+        <li><a href="{% url 'prompts_create' %}">Add a Prompt</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
       </ul>
     </nav>
   </header>
