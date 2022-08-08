@@ -30,9 +30,9 @@
       <ul>
         {% if user.is_authenticated %}
           <li><a href="{% url 'prompts_index' %}">All Prompts</a></li>
-          <li><a href="{% url 'qualities_index' %}">All Qualities</a></li>
+          {% comment %} <li><a href="{% url 'qualities_index' %}">All Qualities</a></li> {% endcomment %}
           <li><a href="{% url 'prompts_create' %}">Add a Prompt</a></li>
-          <li><a href="{% url 'qualities_create' %}">Add a Quality</a></li>
+          {% comment %} <li><a href="{% url 'qualities_create' %}">Add a Quality</a></li> {% endcomment %}
           <li><a href="{% url 'about' %}">About</a></li>
           <li><a href="{% url 'logout' %}">Log out</a></li>
         {% else %}

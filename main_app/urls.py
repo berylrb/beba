@@ -11,9 +11,10 @@ urlpatterns = [
   path('prompts/<int:pk>/delete/', views.PromptDelete.as_view(), name='prompts_delete'),
   path('accounts/signup/', views.signup, name='signup'),
   path('prompts/<int:prompt_id>/add_car/', views.add_car, name='add_car'),
-  path('qualities/create/', views.QualitiesCreate.as_view(), name='qualities_create'),
-  path('qualities/<int:pk>/', views.QualityDetail.as_view(), name='qualities_detail'),
-  path('qualities/', views.QualitiesList.as_view(), name='qualities_index'),
-    path('qualities/<int:pk>/update/', views.QualitiesUpdate.as_view(), name='qualities_update'),
-  path('qualities/<int:pk>/delete/', views.QualitiesDelete.as_view(), name='qualities_delete'),
 ]
+#   path('qualities/create/', views.QualitiesCreate.as_view(), name='qualities_create'),
+#   path('qualities/', views.QualitiesList.as_view(), name='qualities_index'),
+#   path('qualities/<int:quality_id>/', views.QualitiesDetail.as_view(), name='qualities_detail'),
+#   path('qualities/<int:quality_id>/update/', views.QualitiesUpdate.as_view(), name='qualities_update'),
+#   path('qualities/<int:quality_id>/delete/', views.QualitiesDelete.as_view(), name='qualities_delete'),
+# ]

@@ -23,10 +23,9 @@
   {% for quality in qualities_list %}
   <div class="card">
     <div class="card-bg"></div>
-    <a href="{% url 'toys_detail' toy.id %}">
+    <a href="{% url 'qualities_detail' quality.id %}">
       <div class="card-content">
-        <h2>{{ toy.name }}</h2>
-        <p>A {{ toy.color }} toy</p>
+        <p>{{ quality.quality }}</p>
       </div>
     </a>
   </div>
