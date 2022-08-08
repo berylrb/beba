@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
-from .models import Prompt
+from .models import Prompt, Qualities
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -40,6 +41,17 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'signup.html', context)
 
+class QualitiesCreate(CreateView):
+  model = Qualities
+  fields = '__all__'
+
+class QualitiesUpdate(UpdateView):
+  model = Qualities
+  fields = ['name', 'color']
+
+class QualitiesDelete(DeleteView):
+  model = Qualities
+  success_url = '/qualities/'
 
 class PromptCreate(LoginRequiredMixin, CreateView):
   model = Prompt
@@ -58,7 +70,11 @@ class PromptDelete(LoginRequiredMixin, DeleteView):
   model = Prompt
   success_url = '/prompts/'
 
+class QualitiesList(ListView):
+  model = Qualities
 
+class QualityDetail(DetailView):
+  model = Qualities
 
 # def home(request):
 #   return HttpResponse('<h1>Hello ᓚᘏᗢ</h1>')

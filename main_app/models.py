@@ -3,6 +3,15 @@ from django.urls import reverse
 from datetime import date
 from django.contrib.auth.models import User
 
+class Qualities(models.Model):
+  quality = models.CharField(max_length=50)
+
+  def __str__(self):
+    return self.asked
+
+  def get_absolute_url(self):
+    return reverse('used_detail', kwargs={'pk': self.id})
+
 class Prompt(models.Model):
   topic = models.CharField(max_length=100)
   question = models.CharField(max_length=250)
