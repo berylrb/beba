@@ -12,11 +12,8 @@
 {% block content %}
 
 <section class="page-header">
-  <h1>Cat List</h1>
-  <img src="{% static 'images/cool-cat.svg' %}" alt="A cool cat" />
-  <img src="{% static 'images/happy-cat.svg' %}" alt="A happy cat" />
-  <img src="{% static 'images/teacup-cat.svg' %}" alt="A cat in a teacup" />
-  <img src="{% static 'images/cat-in-box.svg' %}" alt="A cat in a box" />
+  <h1>Your Prompts</h1>
+  <img class="line-img" src="{% static 'images/Beba-linelong.png' %}" alt="A long line" />
 </section>
 
 <section class="card-container">
@@ -26,8 +23,9 @@
         <div class="card-content">
           <div class="card-img-container">
             <img 
-              src="{% static 'images/sk8r-boi-cat.svg' %}" 
-              alt="A skater boy cat"
+              class="rocket-img"
+              src="{% static 'images/startup.png' %}" 
+              alt="A rocketship"
             >
           </div>
           <h2 class="card-title">{{ prompt.topic }}</h2>

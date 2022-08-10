@@ -1,9 +1,21 @@
+.page-header {
+  width: 100%;
+  padding: 0 0 40px 0;
+
+}
+
+.line-img {
+  width: 70%;
+  height: 60%;
+}
+
 .card-container {
   padding: 0 30px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 
 .card {
   width: 275px;
@@ -16,7 +28,13 @@
   padding: 10px;
   width: 100%;
 }
+.card-img-container{
+  width: 40%;
+}
 
+.rocket-img {
+  width: 80%;
+}
 .usr-img {
   width: 100%;
   border-radius: var(--card-border-radius);
