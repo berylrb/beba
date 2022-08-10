@@ -18,27 +18,19 @@
 </head>
 <body>
   <header>
-    <div class="header-logo-container">
-      <a href="/">
-        <img 
-          src="{% static 'images/header-logo.svg' %}"
-          alt="The Cat Collector Logo"
-        >
-      </a>
-    </div>
     <nav>
       <ul>
         {% if user.is_authenticated %}
-          <li><a href="{% url 'prompts_index' %}">All Prompts</a></li>
-          {% comment %} <li><a href="{% url 'qualities_index' %}">All Qualities</a></li> {% endcomment %}
-          <li><a href="{% url 'prompts_create' %}">Add a Prompt</a></li>
-          {% comment %} <li><a href="{% url 'qualities_create' %}">Add a Quality</a></li> {% endcomment %}
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'logout' %}">Log out</a></li>
+        <li><a href="/">HOME</a></li>
+          <li><a href="{% url 'prompts_index' %}">ALL PROMPTS</a></li>
+          <li><a href="{% url 'prompts_create' %}">ADD A PROMPT</a></li>
+          <li><a href="{% url 'about' %}">ABOUT</a></li>
+          <li><a href="{% url 'logout' %}">LOG OUT</a></li>
         {% else %}
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'home' %}">Login</a></li>
-          <li><a href="{% url 'signup' %}">Sign Up</a></li>
+          <li><a href="/">HOME</a></li>
+          <li><a href="{% url 'about' %}">ABOUT</a></li>
+          <li><a href="{% url 'home' %}">LOGIN</a></li>
+          <li><a href="{% url 'signup' %}">SIGN UP</a></li>
         {% endif %}
       </ul>
     </nav>
