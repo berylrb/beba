@@ -18,21 +18,23 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
+    <nav id="hamnav">
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger"/>
+      <div id="hamitems">
         {% if user.is_authenticated %}
-        <li><a href="/">HOME</a></li>
-          <li><a href="{% url 'prompts_index' %}">ALL PROMPTS</a></li>
-          <li><a href="{% url 'prompts_create' %}">ADD A PROMPT</a></li>
-          <li><a href="{% url 'about' %}">ABOUT</a></li>
-          <li><a href="{% url 'logout' %}">LOG OUT</a></li>
+          <a href="/">HOME</a>
+          <a href="{% url 'prompts_index' %}">ALL PROMPTS</a>
+          <a href="{% url 'prompts_create' %}">ADD A PROMPT</a>
+          <a href="{% url 'about' %}">ABOUT</a>
+          <a href="{% url 'logout' %}">LOG OUT</a>
         {% else %}
-          <li><a href="/">HOME</a></li>
-          <li><a href="{% url 'about' %}">ABOUT</a></li>
-          <li><a href="{% url 'home' %}">LOGIN</a></li>
-          <li><a href="{% url 'signup' %}">SIGN UP</a></li>
+          <a href="/">HOME</a>
+          <a href="{% url 'home' %}">LOGIN</a>
+          <a href="{% url 'about' %}">ABOUT</a>
+          <a href="{% url 'signup' %}">SIGN UP</a>
         {% endif %}
-      </ul>
+      </div>
     </nav>
   </header>
   <main>

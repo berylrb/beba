@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@100;200;300;400;500;600&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600;700&family=Montserrat:wght@100;200;300;400;500;600&family=Righteous&display=swap');
 
 
 html {
@@ -27,14 +27,11 @@ body {
   align-items: center;
   font-family: 'Montserrat', sans-serif;
   min-height: 100vh;
-  --nav-bg: rgba(104, 197, 248, .7);
-  --nav-bg-ff: rgba(104, 197, 248, .9);
   --borders: #6e5a54 solid 2px;
   --text-color: rgb(17, 20, 17);
   --link-hover-color: rgb(16, 56, 158);
   --button-bg: rgb(245, 245, 245);
   --button-bg-hover: rgb(226, 226, 226);
-  --submit: #88a4b5;
   --warn: rgb(255, 102, 0);
   --danger: rgb(220, 20, 30);
   --secondary: rgb(57, 57, 57);
@@ -49,8 +46,7 @@ body {
 
 header {
   width: 100%;
-  background: var(--nav-bg-ff);
-  border-bottom: var(--borders);
+  
 }
 
 nav {
@@ -73,16 +69,56 @@ h2 {
   font-size: var(--font-xl);
 }
 
+/* #hamnav {
+  position: sticky;
+top: 0;
+} */
+
+#hamnav {
+  top: 0;
+  position: absolute;
+  margin: 0 0 0 20px;
+}
+
+#hamitems { 
+  display: flex;
+  /* background-color:  #ffde78; */
+}
+
+#hamitems a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 20px 0 10px 0;
+  color: black;
+}
+
+#hamnav label { 
+  display: inline-block; 
+  font-style: normal;
+  font-size: 3.8em;
+  padding: 10px;
+}
+
+#hamburger {
+  display: none;
+}
+
+#hamitems { display: none; }
+#hamnav input:checked ~ #hamitems { display: block; }
+
 nav a {
   text-decoration: none;
-  color: #463734;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 2em;
   padding: 0 20px 0 20px;
+  font-family: 'Comfortaa', cursive;
 }
 
 nav a:hover {
-  color: var(--link-hover-color)
+  text-decoration: underline;
+  text-decoration-color: #ff5148;
+  text-decoration-thickness: .3em;
 }
 
 nav ul {
@@ -112,14 +148,15 @@ nav li {
   font-size: var(--font-l);
   padding: 8px 16px;
   border-radius: 6px;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   background-color: var(--button-bg);
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   font-family: inherit;
-  margin-right: 10px;
 }
 
 .btn:hover {
@@ -165,6 +202,8 @@ nav li {
   font-size: var(--font-reg);
 }
 
+
+
 @media only screen and (min-width: 768px) {
   header {
     position: sticky;
@@ -177,22 +216,6 @@ nav li {
   main {
     max-width: 1300px;
     min-height: calc(100vh - 53px);
-
-  }
-
-  nav {
-    margin: 10px 0;
-    padding: 0 15px;
-  }
-
-  nav {
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  nav ul {
-    flex-wrap: nowrap;
   }
 
   .header-logo-container {
@@ -214,7 +237,6 @@ nav li {
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     header {
-      background: var(--nav-bg);
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
     }
@@ -222,6 +244,8 @@ nav li {
 }
 
 @media only screen and (min-width: 1024px) {
+  
+
   main {
     min-height: calc(100vh - 55px);
   }
@@ -235,17 +259,6 @@ nav li {
     border-bottom: none;
   }
 
-  nav,
-  .header-logo-container {
-    margin: 0;
-    /* background: var(--nav-bg-ff);
-    border: var(--borders); */
-    border-radius: 18px;
-  }
-
-  nav {
-    margin-left: auto;
-  }
 
   .header-logo-container {
     /* visual fix to help align logo */
