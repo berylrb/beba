@@ -52,6 +52,24 @@ body, main, header {
   border: 2px solid black;
 }
 
+.back-btn-div {
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-link {
+  width: 90%;
+}
+
+.back {
+  width: 100%;
+  background-color: #ffdd78a2;
+}
+
 
 
 @media only screen and (min-width: 768px) {
@@ -80,6 +98,10 @@ body, main, header {
     justify-content: center;
     align-items: center;
     width: 60%;
+  }
+
+  .back-link {
+    width: 20%;
   }
 
 }
