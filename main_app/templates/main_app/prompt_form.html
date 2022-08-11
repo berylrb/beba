@@ -8,20 +8,22 @@
 {% block content %}
 <div class="page-header">
   {% if prompt %}
-    <h1>Edit {{ prompt.topic }} prompt</h1>
+    <h1>Edit {{ prompt.topic }} Prompt</h1>
   {% else %}
     <h1>Add a Prompt</h1>
   {% endif %}
     <img src="{% static 'images/planetship.png' %}" alt="A cat using a computer"/>
   </div>
+  <div class="add-edit-page">
 
-  <form action="" method="post" class="form-container">
+    <form action="" method="post" class="form-container">
 
-    {% csrf_token %}
-    <table>
-      {{ form.as_table }}
-    </table>
-    <button type="submit" class="btn submit">Submit!</button>
-  </form>
+      {% csrf_token %}
+      {% comment %} <table> {% endcomment %}
+      {{ form.as_p }}
+      {% comment %} </table> {% endcomment %}
+      <button type="submit" class="btn submit">Submit!</button>
+    </form>
+  </div>
 
 {% endblock %}

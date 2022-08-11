@@ -1,4 +1,4 @@
-.index-page-header {
+.page-header {
   width: 100%;
 
   background-color: #ff5148;
@@ -6,7 +6,7 @@
 
 
 .index-h1 {
-  font-size: 1em;
+  font-size: 2.8em;
 }
 
 .index-content {
@@ -80,4 +80,48 @@
   margin: 5px 0;
   font-size: var(--font-reg);
   text-align: center;
+}
+
+
+@media only screen and (min-width: 768px) {
+  body, main, header {
+    width:100vw;
+  }
+
+  .page-header {
+    width: 100%;
+  
+    background-color: #ff5148;
+  }
+  
+  header {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    align-items: center;
+    background-color: #ff5148;
+  }
+
+  main {
+
+    min-height: calc(100vh - 53px);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  
+  body, main, header {
+    width:100vw;
+  }
+
+  main {
+    min-height: calc(100vh - 55px);
+  }
+  
+  header {
+    background-color: transparent;
+    border-bottom: none;
+  }
 }
