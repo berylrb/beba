@@ -1,8 +1,9 @@
-.page-header {
+.index-page-header {
   width: 100%;
-  padding: 0 0 40px 0;
 
+  background-color: #ff5148;
 }
+
 
 .index-h1 {
   font-size: 1em;

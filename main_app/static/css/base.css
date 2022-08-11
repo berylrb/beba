@@ -46,7 +46,8 @@ body {
 
 header {
   width: 100%;
-  
+  background-color: #ff5148;
+  height: 20%;
 }
 
 nav {
@@ -77,13 +78,13 @@ top: 0;
 #hamnav {
   top: 0;
   position: absolute;
-  margin: 0 0 0 20px;
-  background-color: white;
+  margin: 10px 0 0 20px;
+  /* background-color: #ff5148; */
 }
 
 #hamitems { 
   display: flex;
-  background-color: #ffdd7867;
+  background-color: #f2fbfd;
   border: 3px solid black;
   padding: 10px;
 }
@@ -139,13 +140,15 @@ nav li {
   margin: auto;
   padding: 10px 20px 0;
   max-width: 500px;
+  background-color: #ff5148;
 }
 
 .page-header {
   display: flex;
   align-items: center;
-  margin: 20px;
-  /* border-bottom: 2px solid #7ad9e9; */
+  height: 20%;
+  padding: 30px;
+  background-color: #ff5148;
 }
 
 .btn {
@@ -214,6 +217,7 @@ nav li {
     flex-direction: row;
     top: 0;
     align-items: center;
+    background-color: #ff5148;
   }
 
   main {
