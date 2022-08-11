@@ -153,6 +153,7 @@ nav li {
   height: 20%;
   padding: 30px;
   background-color: #ff5148;
+  border-bottom: 3px solid black;
 }
 
 .btn {

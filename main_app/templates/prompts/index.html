@@ -34,6 +34,21 @@
         </a>
       </div>
     {% endfor %}
+    <div class="card">
+      <a class="cardlink" href="{% url 'prompts_create' %}">
+        <div class="card-content">
+          <div class="card-img-container">
+            <img 
+              class="rocket-img"
+              src="{% static 'images/add.png' %}" 
+              alt="A rocketship"
+            >
+          </div>
+          <h2 class="card-title">Add a New Prompt</h2>
+          <p><small>Practice makes perfect!</small></p>
+        </div>
+      </a>
+    </div>
   </section>
 </div>
 

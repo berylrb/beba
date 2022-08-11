@@ -20,6 +20,7 @@ body, main, header {
 .form-container {
   height: 350px;
   padding: 10px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,12 +34,13 @@ body, main, header {
   flex-direction: column;
   width: 100%;
   padding: 10px;
-  margin: 14px 0 10px 0;
+  margin: 14px 0 15px 0;
   font-size: 2.3em;
 
 }
 
 .form-container input {
+  margin: 8px;
   padding: 6px 4px;
   border: 2px solid black;
 }
@@ -46,7 +48,7 @@ body, main, header {
 .btn {
   margin: 20px 0 10px 0;
   width: 97%;
-  background-color: #7ad9e9;
+  background-color: #7ad8e949;
   border: 2px solid black;
 }
 
