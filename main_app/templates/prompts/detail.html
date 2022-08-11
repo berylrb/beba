@@ -30,7 +30,7 @@
       <img 
         class="prompt-img"
         src="{% static 'images/startup.png' %}" 
-        alt="A skater boy cat"
+        alt="A rocketship"
       >
     </div>
     <div class="cat-details">
@@ -82,7 +82,25 @@
       </div>
     {% endif %}
     </section>
+    {% comment %} {% if prompt.car_set.all.count %}
+      {% for car in prompt.car_set.all %}
+        <div class="card">
+            <div class="card-content">
+              <div class="card-img-container">
+                <img 
+                  class="rocket-img"
+                  src="{% static 'images/add.png' %}" 
+                  alt="A rocketship"
+                >
+              </div>
+              <h2 class="card-title"> Response for {{ prompt.topic }}t</h2>
+              <p><small>{{car.get_car_display}}</small></p>
+            </div>
+
+        </div>
+        {% endfor %}
   </div>
+  {% endif %} {% endcomment %}
   <div class="back-btn-div">
     <a class="back-link" href="{% url 'prompts_index' %}"><button class="btn back">Go Back</button></a>
   </div>
