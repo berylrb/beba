@@ -85,36 +85,6 @@
     </div>
   {% endif %}
   </section>
-  {% comment %} <section class="toys">
-    <div class="subsection-title">
-      <h2>Qualities</h2>
-      <img src="{% static 'images/string.svg' %}" alt="A ball of string" />
-      <img src="{% static 'images/mouse.svg' %}" alt="A mouse" />
-      <img src="{% static 'images/fish.svg' %}" alt="A fishy toy" />
-    </div>
-    <h3>Additional Qualities for this Topic</h3>
-    <div class="subsection-content">
-      {% if prompt.qualities.count %}
-        {% for quality in prompt.qualities.all %}
-          <div class="toy-container">
-            <div 
-              class="color-block"
-              style="background-color: {{ toy.color }}"
-            ></div>
-            <a href="{% url 'qualities_detail' quality.id %}">
-              <p>{{ quality.quality }}</p>
-            </a>
-          </div>
-        {% endfor %}
-      {% else %}
-        <p class="no-toys">{{prompt.topic}} doesn't have any additional qualities</p>
-      {% endif %}
-    </div>
-    <h3>Available Qualities</h3>
-    <div class="subsection-content">
-    </div>
-  </section>
-</div> {% endcomment %}
 </div>
 
 {% endblock %}

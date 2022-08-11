@@ -78,11 +78,14 @@ top: 0;
   top: 0;
   position: absolute;
   margin: 0 0 0 20px;
+  background-color: white;
 }
 
 #hamitems { 
   display: flex;
-  /* background-color:  #ffde78; */
+  background-color: #ffdd7867;
+  border: 3px solid black;
+  padding: 10px;
 }
 
 #hamitems a {
@@ -142,6 +145,7 @@ nav li {
   display: flex;
   align-items: center;
   margin: 20px;
+  /* border-bottom: 2px solid #7ad9e9; */
 }
 
 .btn {
@@ -184,7 +188,6 @@ nav li {
 }
 
 .page-header h1 {
-  font-size: var(--font-xxl);
   margin: 0;
   font-family: 'Comfortaa', cursive;
 }
@@ -223,7 +226,8 @@ nav li {
   }
 
   .page-header h1 {
-    font-size: var(--font-xtreme);
+    font-size: 3.5em;
+    margin-left: auto;
   }
   
   .page-header img {

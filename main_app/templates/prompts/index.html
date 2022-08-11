@@ -11,29 +11,30 @@
 
 {% block content %}
 
-<section class="page-header">
-  <h1>Your Prompts</h1>
-  <img class="line-img" src="{% static 'images/Beba-linelong.png' %}" alt="A long line" />
-</section>
-
-<section class="card-container">
-  {% for prompt in prompts %}
-    <div class="card">
-      <a href="{% url 'prompts_detail' prompt.id %}">
-        <div class="card-content">
-          <div class="card-img-container">
-            <img 
-              class="rocket-img"
-              src="{% static 'images/startup.png' %}" 
-              alt="A rocketship"
-            >
+<div class="page-header">
+  <h1 class="index-h1">All Prompts</h1>
+  <img class="line-img" src="{% static 'images/research.png' %}" alt="A long line" />
+</div>
+<div class="index-contents">
+  <section class="card-container">
+    {% for prompt in prompts %}
+      <div class="card">
+        <a class="cardlink" href="{% url 'prompts_detail' prompt.id %}">
+          <div class="card-content">
+            <div class="card-img-container">
+              <img 
+                class="rocket-img"
+                src="{% static 'images/startup.png' %}" 
+                alt="A rocketship"
+              >
+            </div>
+            <h2 class="card-title">{{ prompt.topic }}</h2>
+            <p><small>{{ prompt.question }}</small></p>
           </div>
-          <h2 class="card-title">{{ prompt.topic }}</h2>
-          <p><small>{{ prompt.question }}</small></p>
-        </div>
-      </a>
-    </div>
-  {% endfor %}
-</section>
+        </a>
+      </div>
+    {% endfor %}
+  </section>
+</div>
 
 {% endblock %}
