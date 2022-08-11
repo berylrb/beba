@@ -11,9 +11,25 @@
 
 
 {% block content %}
-  <h1>Beba</h1>
-  <h3>Behavioral Bank</h3>
-  <p>Collect and practice behavioral interview questions</p>
+<section class="page-header">
+  <h1 class="index-h1">About beba</h1>
+  <img class="line-img" src="{% static 'images/flag.png' %}" alt="A long line" />
+</section>
+<div class="about-contents">
+  <div class="beba-img-container">
+    <img 
+      class="beba-img"
+      src="{% static 'images/beba-about.png' %}" 
+      alt="beba diagram"
+    >
+  </div>
+  <div class="p-div">
+    <p class="beba-p">With beba, users can create behavioral interview questions to practice as they search for a new job. Once a prompt is created, users can add multiple responses for each prompt or topic. This way they have a handy and easy to navigate library of genuine responses that they can call upon during a virtual interview.</p>
+  </div>
+  <a href="https://www.flaticon.com/free-icons/star" title="star icons">All icons created by Freepik - Flaticon</a>
+</div>
   {% endblock %}
 </body>
+<footer>
+</footer>
 </html>

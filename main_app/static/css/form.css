@@ -1,6 +1,9 @@
 body, main, header {
   width:100vw;
 }
+.index-h1 {
+  font-size: 2.8em;
+}
 
 .page-header {
   width: 100%; 
