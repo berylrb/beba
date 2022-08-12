@@ -22,7 +22,9 @@
       {% comment %} <table> {% endcomment %}
       {{ form.as_p }}
       {% comment %} </table> {% endcomment %}
-      <button type="submit" class="btn submit">Submit!</button>
+      <div class="submit-div">
+        <button type="submit" class="btn submit">Submit</button>
+      </div>
     </form>
     <div class="back-btn-div">
       <a class="back-link" href="{% url 'prompts_index' %}"><button class="btn back">Go Back</button></a>

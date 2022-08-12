@@ -48,9 +48,18 @@ body, main, header {
   border: 2px solid black;
 }
 
+
+.submit-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
 .btn {
   margin: 20px 0 10px 0;
-  width: 97%;
+  width: 92%;
   background-color: #7ad8e949;
   border: 2px solid black;
 }
@@ -80,12 +89,20 @@ body, main, header {
   body, main, header {
     width:100vw;
   }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+  }
   
   .page-header {
     width: 100%; 
   }
   .add-edit-page {
-    width: 100%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,6 +118,15 @@ body, main, header {
     justify-content: center;
     align-items: center;
     width: 60%;
+  }
+
+  .back-btn-div {
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .back-link {
