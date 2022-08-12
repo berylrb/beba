@@ -12,10 +12,25 @@ from django.contrib.auth.models import User
 #   def get_absolute_url(self):
 #     return reverse('qualities_detail', kwargs={'quality_id': self.id})
 
+# PICS = (
+#   ('static/images/alien2.png', 'alien'),
+#   ('static/images/stars.png', 'stars'),
+#   ('static/images/day-and-night.png', 'day/night'),
+#   ('static/images/galaxy.png', 'galaxy'),
+#   ('static/images/abduction.png', 'ufo'),
+#   ('static/images/spacedog.png', 'space dog'),
+#   ('static/images/meteor.png', 'meteor')
+# )
+
+
 class Prompt(models.Model):
   topic = models.CharField(max_length=100)
   question = models.CharField(max_length=250)
-  # qualities = models.ManyToManyField(Qualities)
+  # pics = models.CharField(
+  #   max_length=255,
+  #   choices=PICS,
+  #   default=PICS[0][0]
+  # )
   user = models.ForeignKey(User, on_delete=models.CASCADE)
 
   def __str__(self):
