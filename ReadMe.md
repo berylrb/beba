@@ -2,9 +2,9 @@
 
 This app allows users to create, collect, and practice answering behavioral interview questions.  
 
-Visit the beba app at <a href="https://beryl-beba.herokuapp.com/" target="_blank">https://beryl-queue.herokuapp.com</a>.
+Visit the beba app<a href="https://beryl-beba.herokuapp.com/" target="_blank">here</a>.
 
-Additionally, check out the trello board used for planning this app at <a href="https://trello.com/b/6fKWFjpH/beba-planning" target="_blank">https://trello.com/b/6fKWFjpH/beba-planning</a>.
+Additionally, check out the trello board used for planning this app at <a href="https://trello.com/b/6fKWFjpH/beba-planning" target="_blank">here</a>.
 
 
 
