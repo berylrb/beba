@@ -227,8 +227,10 @@ body, main, header {
   width: 95%;
   padding: 5px;
   margin: 5px;
-  font-size: var(--font-l);
+  font-size: 1.9em;
 }
+
+
 
 .subsection-content input {
   margin-left: 5px;
@@ -339,8 +341,10 @@ body, main, header {
 
 
 .card {
-  width: 280px;
-  margin: 10px;
+  width: 480px;
+  margin: 15px;
+  /* height: 450px;
+  overflow-y: scroll; */
   border: 3px solid black;
   box-shadow: 4px 5px 2px #ff514869;
 }
@@ -365,6 +369,16 @@ body, main, header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.carh4 {
+  font-size: 1.9em;
+  margin: 2px;
+  text-decoration: underline;
+}
+
+.card-p {
+  font-size: 1.8em;
 }
 
 @media only screen and (min-width: 768px) {

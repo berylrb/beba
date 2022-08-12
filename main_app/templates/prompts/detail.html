@@ -74,28 +74,28 @@
       <div class="card-container">
         {% for car in prompt.car_set.all %}
           <div class="card">
-              <div class="card-content">
-                <div class="card-img-container">
-                  <img 
-                    class="rocket-img"
-                    src="{% static 'images/startup.png' %}" 
-                    alt="A rocketship"
-                  >
-                </div>
-                  <div class="card-text-div">
-                  <h2 class="card-title">{{ car.date }}</h2>
-                  <h4 class="carh4">Challenge:</h4>
-                  <p><small>{{ car.challenge }}</small></p>
-                  <h4 class="carh4">Action:</h4>
-                  <p><small>{{ car.action }}</small></p>
-                  <h4 class="carh4">Result:</h4>
-                  <p><small>{{ car.response }}</small></p>
-                </div>
+            <div class="card-content">
+              <div class="card-img-container">
+                <img 
+                  class="rocket-img"
+                  src="{% static 'images/space.png' %}" 
+                  alt="A rocketship"
+                >
               </div>
+              <div class="card-text-div">
+                <h2 class="card-title">{{ car.date }}</h2>
+                <h4 class="carh4">Challenge:</h4>
+                <p class="card-p"><small>{{ car.challenge }}</small></p>
+                <h4 class="carh4">Action:</h4>
+                <p class="card-p"><small>{{ car.action }}</small></p>
+                <h4 class="carh4">Result:</h4>
+                <p class="card-p"><small>{{ car.response }}</small></p>
+              </div>
+            </div>
           </div>
-          {% endfor %}
-          </div>
-        {% else %}
+        {% endfor %}
+      </div>
+      {% else %}
         <div class="subsection-content">
           <p>No responses yet.</p>
         </div>
