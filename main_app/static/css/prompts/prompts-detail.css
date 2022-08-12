@@ -1,3 +1,17 @@
+body, main, header {
+  width:100vw;
+}
+
+.page-header {
+  width: 100%;
+
+  background-color: #ff5148;
+}
+
+.index-h1 {
+  font-size: 2.8em;
+}
+
 .details-contents {
   display: flex;
   flex-direction: column;
@@ -7,11 +21,39 @@
 
 .cat-container {
   padding: 35px 30px;
+  margin: 40px 0 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 70%;
+  height: 45%;
+  border: 3px solid black;
+  /* background-color:  #ffdd7859 ; */
+}
+
+.warn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  color: black;
+  border: 2px solid black;
+  background-color: #7ad8e949;
+  margin: 15px;
+}
+
+.danger {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  color: black;
+  border: 2px solid black;
+  background-color: #ff51488a;
+  margin: 15px;
 }
 
 .cat-img {
@@ -27,11 +69,28 @@
 }
 
 .cat-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 98%;
 }
 
+.cat-details p, h1 {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+
 .cat-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin-top: 20px;
+  padding: 4px;
 }
 
 .feedings-toy-container {
