@@ -72,6 +72,7 @@ class PromptCreate(LoginRequiredMixin, CreateView):
 class PromptUpdate(LoginRequiredMixin, UpdateView):
   model = Prompt
   fields = ['topic', 'question']
+  success_url = '/prompts/'
 
 class PromptDelete(LoginRequiredMixin, DeleteView):
   model = Prompt
