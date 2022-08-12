@@ -58,7 +58,7 @@ body, main, header {
 }
 
 .cat-img {
-  width: 65%;
+  width: 55%;
 }
 
 .prompt-img {
@@ -193,8 +193,9 @@ body, main, header {
 }
 
 .p-div {
-  font-size: 1.6em;
-  font-weight: 500;
+  font-size: 1.8em;
+  font-weight: 400;
+
 }
 
 .feedings h2,
@@ -345,27 +346,43 @@ body, main, header {
     min-height: calc(100vh - 53px);
   }
 
+  .cat-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+
   .cat-container {
     padding: 35px 30px;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    width: 60%;
+    margin: 50px 0 50px 0;
   }
 
   .cat-img {
-    width: 15%;
-
-    margin-right: 25px;
+    width: 25%;
   }
-
+  
+  .prompt-img {
+    width: 80%;
+  }
   .feedings-toy-container {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    width: 100%;
+  }
+
+  .p-div {
+    padding: 20px;
   }
 
   .feedings-toy-container > section {
-    width: 45%;
+    width: 60%;
   }
 }
 
