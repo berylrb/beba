@@ -25,7 +25,7 @@ from django.contrib.auth.models import User
 
 class Prompt(models.Model):
   topic = models.CharField(max_length=100)
-  question = models.TextField(max_length=250)
+  question = models.CharField(max_length=250)
   # pics = models.CharField(
   #   max_length=255,
   #   choices=PICS,
