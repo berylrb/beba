@@ -2,22 +2,18 @@
 
 This app allows users to create, collect, and practice answering behavioral interview questions.  
 
-<!-- Visit the Queue app at <a href="https://beryl-queue.herokuapp.com/" target="_blank">https://beryl-queue.herokuapp.com</a>. -->
+Visit the beba app at <a href="https://beryl-beba.herokuapp.com/" target="_blank">https://beryl-queue.herokuapp.com</a>.
 
-<!-- Additionally, check out the trello board used for planning this app at <a href="https://trello.com/b/VBQIEHJN/tv-show-app" target="_blank">https://trello.com/b/VBQIEHJN/tv-show-app</a>.
- -->
-
- Link to Beba will go here
-
-
- Link to Trello will go here
+Additionally, check out the trello board used for planning this app at <a href="https://trello.com/b/6fKWFjpH/beba-planning" target="_blank">https://trello.com/b/6fKWFjpH/beba-planning</a>.
 
 
 
 ## App Preview
 
-<!-- <img src="https://i.ibb.co/SNFbGGD/Screen-Shot-2022-07-23-at-4-52-21-PM.png"> -->
-img will go here
+<img src="https://i.ibb.co/SrcGS9s/beba-home.png">
+
+<br>
+<hr>
 
 
 ## Some Technologies Used:
@@ -40,20 +36,30 @@ img will go here
 
 In its current state, this app is a mere imagining of its potential and future manifestation. Here are some future feature additions to look forward to:
 
-icebox checklist will go here
-<!-- 
-- [x] set up api call for trending shows
-- [x] set up api call for recommended shows
-- [x] hover over poster cards to see show description
-- [x] minor css adjustments
-- [ ] add an 'about' page that explains what queue is for and how to utilize its features 
-- [ ] add a ternary to display a message if there aren't any similar/recommended shows to display
-- [ ] add 'back' buttons to recommended page
-- [ ] add a slider that only displays 3-4 poster cards at once
-- [ ] allow users to create multiple lists
-- [ ] allow users to search for shows in other users' lists
-- [ ] allow users to search for a show based on keyword -->
+
+- [] allow users to select a card image from a dropdown
+
 
 
 ## Special Thanks:
-special thanks will go here
+
+Dear Ben, David, Hunter, Ian, & Joe,
+
+Thank you for everything. Truly. 
+
+<3, 
+
+Beryl
+
+
+
+Dear classmates,
+
+Love you forever.
+
+<3, 
+
+Beryl
+
+
+<a href="https://www.flaticon.com/free-icons/star" title="star icons">All icons created by Freepik - Flaticon</a>
