@@ -66,27 +66,40 @@
           <button type="submit" class="btn submit">Add Response</button>
         </div>
       </form>
-      <h3>Past Responses</h3>
-      {% if prompt.car_set.all.count %}
-      <table>
-        <thead>
-          <tr><th>Date</th><th>Response</th></tr>
-        </thead>
-        <tbody>
-          {% for car in prompt.car_set.all %}
-            <tr>
-              <td>{{car.date}}</td>
-              <td>{{car.get_car_display}}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-      {% else %}
-      <div class="subsection-content">
-        <p>No responses yet.</p>
-      </div>
-    {% endif %}
     </section>
+  </div>
+  <div class="response-cards-div">
+    <h3 class="index-h1">Past Responses</h3>
+      {% if prompt.car_set.all.count %}
+      <div class="card-container">
+        {% for car in prompt.car_set.all %}
+          <div class="card">
+              <div class="card-content">
+                <div class="card-img-container">
+                  <img 
+                    class="rocket-img"
+                    src="{% static 'images/startup.png' %}" 
+                    alt="A rocketship"
+                  >
+                </div>
+                  <div class="card-text-div">
+                  <h2 class="card-title">{{ car.date }}</h2>
+                  <h4 class="carh4">Challenge:</h4>
+                  <p><small>{{ car.challenge }}</small></p>
+                  <h4 class="carh4">Action:</h4>
+                  <p><small>{{ car.action }}</small></p>
+                  <h4 class="carh4">Result:</h4>
+                  <p><small>{{ car.response }}</small></p>
+                </div>
+              </div>
+          </div>
+          {% endfor %}
+          </div>
+        {% else %}
+        <div class="subsection-content">
+          <p>No responses yet.</p>
+        </div>
+      {% endif %}
   </div>
   <div class="back-btn-div">
     <a class="back-link" href="{% url 'prompts_index' %}"><button class="btn back">Go Back</button></a>

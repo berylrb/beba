@@ -3,7 +3,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic import ListView, DetailView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
-from .models import Prompt
+from .models import Prompt, Car
 # , Qualities
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.decorators import login_required
@@ -97,8 +97,9 @@ def prompts_index(request):
 @login_required
 def prompts_detail(request, prompt_id):
   prompt = Prompt.objects.get(id=prompt_id)
+  cars = Car.objects.all()
   car_form = CarForm()
-  return render(request, 'prompts/detail.html', { 'prompt': prompt, 'car_form': car_form })
+  return render(request, 'prompts/detail.html', { 'prompt': prompt, 'car_form': car_form, 'cars': cars })
 
 def add_car(request, prompt_id):
   form = CarForm(request.POST)

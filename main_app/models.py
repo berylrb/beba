@@ -34,4 +34,4 @@ class Car(models.Model):
   prompt = models.ForeignKey(Prompt, on_delete=models.CASCADE)
 
   def __str__(self):
-    return f"{self.get_car_display()} on {self.date}"
+    return f"{self.challenge}, {self.action}, {self.response} on {self.date}"

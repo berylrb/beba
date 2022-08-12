@@ -319,6 +319,54 @@ body, main, header {
   border: 2px solid black;
 }
 
+.response-cards-div {
+  padding: 40px 0 0 0;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 30px;
+  margin: 10px 0 30px;
+}
+
+
+.card {
+  width: 280px;
+  margin: 10px;
+  border: 3px solid black;
+  box-shadow: 4px 5px 2px #ff514869;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+.card-img-container{
+  width: 40%;
+}
+
+.rocket-img {
+  width: 80%;
+}
+
+.card-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media only screen and (min-width: 768px) {
 
   body, main, header {
