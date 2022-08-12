@@ -13,6 +13,7 @@ body, main, header {
 }
 
 .details-contents {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +29,7 @@ body, main, header {
   justify-content: center;
   width: 70%;
   height: 45%;
-  border: 3px solid black;
+  border: 2px solid black;
   /* background-color:  #ffdd7859 ; */
 }
 
@@ -96,7 +97,7 @@ body, main, header {
 .feedings-toy-container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding: 20px;
   align-items: center;
   width: 70%;
 }
@@ -145,6 +146,7 @@ body, main, header {
 .cat-details h1 {
   font-size: var(--font-xxl);
   margin: 15px 0 3px;
+  
 }
 
 .cat-details h2 {
@@ -165,16 +167,20 @@ body, main, header {
 }
 
 .feedings-toy-container > section {
-  width: 80%;
+  width: 100%;
   min-width: 360px;
-  border: var(--borders);
-  border-radius: var(--card-border-radius);
-  padding: 10px;
-  box-shadow: var(--card-box-shadow);
+  border: 2px solid black;
+  padding: 20px;
+  background-color: #7ad8e923;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+.feedings {
+  width: 100%;
 }
 
 .subsection-title img {
@@ -184,6 +190,11 @@ body, main, header {
 
 .subsection-title img:first-of-type {
   margin-left: 16px;
+}
+
+.p-div {
+  font-size: 1.6em;
+  font-weight: 500;
 }
 
 .feedings h2,
@@ -198,17 +209,48 @@ body, main, header {
   margin: 10px 0;
 }
 
+.subsection-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .subsection-content p,
 .subsection-content input,
 .subsection-content select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+  padding: 5px;
+  margin: 5px;
   font-size: var(--font-l);
 }
 
-.subsection-content input,
-.subsection-content select {
+.subsection-content input {
   margin-left: 5px;
   padding: 3px;
+  border: 2px solid black;
 }
+
+
+.submit-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.submit {
+  margin: 20px 0 10px 0;
+  width: 92%;
+  background-color: #ffdd78a2;;
+  border: 2px solid black;
+}
+
 
 .feedings table {
   width: calc(100% - 16px);
@@ -264,6 +306,7 @@ body, main, header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 0 50px 0;
 }
 
 .back-link {
@@ -272,7 +315,7 @@ body, main, header {
 
 .back {
   width: 100%;
-  background-color: #ffdd78a2;
+  border: 2px solid black;
 }
 
 @media only screen and (min-width: 768px) {

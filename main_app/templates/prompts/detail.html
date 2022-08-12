@@ -62,7 +62,9 @@
       >
         {% csrf_token %}
         {{ car_form.as_p }}
-        <button type="submit" class="btn submit">Add Response</button>
+        <div class="submit-div">
+          <button type="submit" class="btn submit">Add Response</button>
+        </div>
       </form>
       <h3>Past Responses</h3>
       {% if prompt.car_set.all.count %}
