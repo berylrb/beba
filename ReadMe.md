@@ -37,7 +37,7 @@ Additionally, check out the trello board used for planning this app at <a href="
 In its current state, this app is a mere imagining of its potential and future manifestation. Here are some future feature additions to look forward to:
 
 
-- [] allow users to select a card image from a dropdown
+- [ ] allow users to select a card image from a dropdown
 
 
 
